@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mery Key | Institut de Beauté - Genève</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+        body{background:#FAF7F2;color:#2C2416}
+        .hero{background:linear-gradient(135deg,#2C2416,#4A3F32);color:#fff;text-align:center;padding:100px 20px}
+        .hero h1{font-size:3rem;margin-bottom:10px}
+        .hero p{font-size:1.2rem;color:#C9A96E;margin-bottom:30px}
+        .btn{display:inline-block;padding:12px 30px;background:#C9A96E;color:#fff;border-radius:25px;text-decoration:none;margin:5px}
+        .services{padding:60px 20px;max-width:1200px;margin:0 auto}
+        .services h2{text-align:center;font-size:2rem;margin-bottom:40px}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+        .card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+        .card h3{color:#C9A96E;margin-bottom:10px}
+        .card ul{list-style:none;margin:15px 0}
+        .card li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee}
+        .price{font-weight:bold;color:#A88B4A}
+        .footer{background:#2C2416;color:#fff;text-align:center;padding:40px 20px}
+        .footer a{color:#C9A96E}
+        @media(max-width:768px){.hero h1{font-size:2rem}}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Mery Key</h1>
+        <p>Votre institut de beauté au cœur de Genève</p>
+        <a href="#services" class="btn">Nos Services</a>
+        <a href="#contact" class="btn">Contact</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Nos Prestations</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Onglerie</h3>
+                <p>Manucure, gel, nail art</p>
+                <ul>
+                    <li>Manucure classique <span class="price">35 CHF</span></li>
+                    <li>Pose gel <span class="price">65 CHF</span></li>
+                    <li>Pose gel + nail art <span class="price">85 CHF</span></li>
+                    <li>Pédicure spa <span class="price">55 CHF</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Massage</h3>
+                <p>Relaxant, pierres chaudes</p>
+                <ul>
+                    <li>30 min <span class="price">55 CHF</span></li>
+                    <li>60 min <span class="price">95 CHF</span></li>
+                    <li>Pierres chaudes <span class="price">120 CHF</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Épilation Cire</h3>
+                <p>Cire chaude premium</p>
+                <ul>
+                    <li>Maillot <span class="price">45 CHF</span></li>
+                    <li>Jambes complètes <span class="price">55 CHF</span></li>
+                    <li>Demi-jambes <span class="price">35 CHF</span></li>
+                    <li>Aisselles <span class="price">20 CHF</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="espace-pro">
+        <h2>Espace Professionnel</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Location de cabines</h3>
+                <p>Commission 20% sur vos clients</p>
+                <ul>
+                    <li>Cabine équipée <span class="price">Inclus</span></li>
+                    <li>WiFi & matériel <span class="price">Inclus</span></li>
+                    <li>Flexibilité horaire <span class="price">Oui</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Salles de Réunion</h3>
+                <p>Tarifs dégressifs</p>
+                <ul>
+                    <li>1ère heure <span class="price">60 CHF</span></li>
+                    <li>2ème heure <span class="price">30 CHF (-50%)</span></li>
+                    <li>3ème heure+ <span class="price">50 CHF/h</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="contact">
+        <h2>Contact</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Nous trouver</h3>
+                <p>📍 Rue de la Beauté 12, 1205 Genève</p>
+                <p>📞 +41 22 123 45 67</p>
+                <p>✉️ contact@merykey.ch</p>
+                <p>🕐 Lun-Sam : 9h-19h</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mery Key - Institut de Beauté & Espace Pro</p>
+        <p><a href="#">Mentions légales</a> | <a href="#">CGV</a></p>
+    </footer>
+</body>
+</html>
