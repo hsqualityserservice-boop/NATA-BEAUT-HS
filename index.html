@@ -1,112 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mery Key | Institut de Beauté - Genève</title>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-        body{background:#FAF7F2;color:#2C2416}
-        .hero{background:linear-gradient(135deg,#2C2416,#4A3F32);color:#fff;text-align:center;padding:100px 20px}
-        .hero h1{font-size:3rem;margin-bottom:10px}
-        .hero p{font-size:1.2rem;color:#C9A96E;margin-bottom:30px}
-        .btn{display:inline-block;padding:12px 30px;background:#C9A96E;color:#fff;border-radius:25px;text-decoration:none;margin:5px}
-        .services{padding:60px 20px;max-width:1200px;margin:0 auto}
-        .services h2{text-align:center;font-size:2rem;margin-bottom:40px}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-        .card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-        .card h3{color:#C9A96E;margin-bottom:10px}
-        .card ul{list-style:none;margin:15px 0}
-        .card li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee}
-        .price{font-weight:bold;color:#A88B4A}
-        .footer{background:#2C2416;color:#fff;text-align:center;padding:40px 20px}
-        .footer a{color:#C9A96E}
-        @media(max-width:768px){.hero h1{font-size:2rem}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mery Key | Instituto de Belleza</title>
+<style>
+:root{--ink:#f7f8fb;--muted:#9aa3b2;--bg:#0b0e14;--panel:#121722;--panel2:#171d2a;--line:#252d3b;--gold:#d9b46c;--blue:#62a8ff;--yellow:#e4bd63;--green:#55d69b;--gray:#7d8798;--danger:#f08383}*{box-sizing:border-box;margin:0}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}button{font:inherit;cursor:pointer}.landing{background:#faf7f2;color:#2c2416;min-height:100vh}.landing .hero{padding:96px 20px;text-align:center;background:linear-gradient(135deg,#2c2416,#4a3f32);color:#fff}.landing h1{font-size:clamp(2.5rem,7vw,4.5rem);letter-spacing:-.05em}.landing .hero p{color:#d9bb7f;margin:10px 0 30px;font-size:1.15rem}.landing .btn{display:inline-block;padding:12px 25px;border:0;border-radius:99px;background:#c9a96e;color:#fff;text-decoration:none;margin:4px}.landing .services{padding:62px 20px;max-width:1100px;margin:auto}.landing h2{text-align:center;margin-bottom:32px}.landing .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.landing .card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 2px 14px #00000012}.landing .card h3{color:#a88b4a;margin-bottom:7px}.landing ul{list-style:none;margin-top:15px}.landing li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee}.landing .price{font-weight:700;color:#a88b4a}.landing .footer{padding:34px 20px;background:#2c2416;color:#fff;text-align:center}.landing .footer a{color:#d9bb7f}.landing-switch{position:absolute;top:24px;right:24px;background:#ffffff18!important;border:1px solid #ffffff40!important}
+.dashboard{display:none;min-height:100vh;background:radial-gradient(circle at 80% -10%,#1d273a 0,#0b0e14 36%)}.dash-shell{display:flex;min-height:100vh}.sidebar{width:248px;flex:0 0 248px;border-right:1px solid var(--line);background:#0f131c;padding:26px 16px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:10px;padding:0 12px 30px;font-weight:750;letter-spacing:.02em}.brand-mark{width:31px;height:31px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#8e6631);display:grid;place-items:center;color:#111;font-weight:900}.nav-label{font-size:.68rem;text-transform:uppercase;color:#667084;padding:12px}.nav-item{width:100%;border:0;background:transparent;color:#9ba5b5;text-align:left;padding:12px;border-radius:10px;margin:2px 0;display:flex;gap:11px;align-items:center}.nav-item:hover,.nav-item.active{background:#1b2331;color:#fff}.nav-item.active{box-shadow:inset 2px 0 var(--gold)}.side-bottom{margin-top:auto;border-top:1px solid var(--line);padding-top:18px}.main{flex:1;padding:28px 34px;min-width:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:30px}.eyebrow{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}h1{font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-.035em}.top-actions{display:flex;align-items:center;gap:14px}.search{background:#121722;border:1px solid var(--line);padding:10px 14px;border-radius:10px;color:#fff;outline:0}.avatar{width:37px;height:37px;border-radius:50%;display:grid;place-items:center;background:#d9b46c;color:#16120c;font-weight:700}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:25px}.metric,.panel{background:linear-gradient(145deg,#151c29,#10151e);border:1px solid var(--line);border-radius:14px}.metric{padding:18px}.metric-label{font-size:.78rem;color:var(--muted)}.metric strong{display:block;font-size:1.65rem;margin-top:5px}.metric small{color:var(--green)}.content-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.8fr);gap:20px}.panel{padding:20px;margin-bottom:20px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.panel h2{font-size:1.05rem}.subtle{color:var(--muted);font-size:.82rem}.table-wrap{overflow-x:auto}.data-table{width:100%;border-collapse:collapse;min-width:560px}.data-table th{text-align:left;font-size:.7rem;text-transform:uppercase;color:#738096;font-weight:600;padding:10px 12px;border-bottom:1px solid var(--line)}.data-table td{padding:14px 12px;border-bottom:1px solid #202735;font-size:.86rem}.data-table tr:last-child td{border-bottom:0}.badge{display:inline-flex;padding:4px 8px;border-radius:99px;font-size:.68rem;font-weight:700}.badge-blue{background:#18395c;color:#8cc4ff}.badge-yellow{background:#493b1d;color:#f3ce77}.badge-green{background:#173d31;color:#7ce2b4}.badge-gray{background:#2b323e;color:#b5bfce}.export{position:relative}.export-btn{border:1px solid #3a4658;background:#1b2432;color:#dce4ef;border-radius:9px;padding:8px 11px;font-size:.78rem}.export-btn:hover{border-color:var(--gold);color:var(--gold)}.export-menu{display:none;position:absolute;right:0;top:42px;width:165px;padding:6px;background:#1b2330;border:1px solid #3a4658;border-radius:10px;z-index:5;box-shadow:0 12px 30px #0008}.export.open .export-menu{display:block}.export-menu button{display:block;width:100%;border:0;text-align:left;background:transparent;color:#dce4ef;padding:9px;border-radius:6px;font-size:.8rem}.export-menu button:hover{background:#283447}.notice{display:none;margin:0 0 20px;padding:12px 15px;border:1px solid #355476;background:#132840;color:#9bcaff;border-radius:10px;font-size:.84rem}.notice.show{display:block}.jobs{display:grid;gap:12px}.job{border:1px solid var(--line);background:#151b26;color:#ccd5e2;text-align:left;border-radius:10px;padding:13px}.job:hover,.job.selected{border-color:var(--gold);background:#1b2330}.job-row{display:flex;justify-content:space-between;gap:10px}.job strong{font-size:.87rem}.job small{display:block;color:var(--muted);margin-top:3px}.timeline{position:relative;padding:6px 0 4px 29px}.timeline:before{content:"";position:absolute;left:8px;top:13px;bottom:14px;width:2px;background:#2f3949}.event{position:relative;padding:0 0 22px}.event:last-child{padding-bottom:0}.dot{position:absolute;left:-27px;top:3px;width:17px;height:17px;border-radius:50%;border:3px solid var(--panel);background:var(--gray);box-shadow:0 0 0 1px #536073}.event.done .dot{background:var(--green);box-shadow:0 0 0 1px var(--green)}.event.current .dot{background:var(--yellow);box-shadow:0 0 0 4px #e4bd6330}.event h3{font-size:.9rem}.event p{color:var(--muted);font-size:.78rem}.event time{display:block;color:#718096;font-size:.7rem;margin-top:2px}.flow-note{padding:12px;background:#182131;border-radius:9px;color:#aeb9c9;font-size:.8rem}.mobile-menu{display:none}
+@media(max-width:900px){.sidebar{width:210px;flex-basis:210px}.main{padding:24px}.metrics{grid-template-columns:repeat(2,1fr)}.content-grid{grid-template-columns:1fr}}@media(max-width:640px){.sidebar{display:none}.main{padding:18px 14px}.topbar{align-items:flex-start}.search{display:none}.mobile-menu{display:block;border:1px solid var(--line);background:#151c29;color:#fff;border-radius:8px;padding:7px}.metrics{gap:9px}.metric{padding:14px}.metric strong{font-size:1.3rem}.panel{padding:15px}.top-actions{gap:7px}}
+</style>
 </head>
 <body>
-    <section class="hero">
-        <h1>Mery Key</h1>
-        <p>Votre institut de beauté au cœur de Genève</p>
-        <a href="#services" class="btn">Nos Services</a>
-        <a href="#contact" class="btn">Contact</a>
-    </section>
-
-    <section class="services" id="services">
-        <h2>Nos Prestations</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Onglerie</h3>
-                <p>Manucure, gel, nail art</p>
-                <ul>
-                    <li>Manucure classique <span class="price">35 CHF</span></li>
-                    <li>Pose gel <span class="price">65 CHF</span></li>
-                    <li>Pose gel + nail art <span class="price">85 CHF</span></li>
-                    <li>Pédicure spa <span class="price">55 CHF</span></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Massage</h3>
-                <p>Relaxant, pierres chaudes</p>
-                <ul>
-                    <li>30 min <span class="price">55 CHF</span></li>
-                    <li>60 min <span class="price">95 CHF</span></li>
-                    <li>Pierres chaudes <span class="price">120 CHF</span></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Épilation Cire</h3>
-                <p>Cire chaude premium</p>
-                <ul>
-                    <li>Maillot <span class="price">45 CHF</span></li>
-                    <li>Jambes complètes <span class="price">55 CHF</span></li>
-                    <li>Demi-jambes <span class="price">35 CHF</span></li>
-                    <li>Aisselles <span class="price">20 CHF</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="espace-pro">
-        <h2>Espace Professionnel</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Location de cabines</h3>
-                <p>Commission 20% sur vos clients</p>
-                <ul>
-                    <li>Cabine équipée <span class="price">Inclus</span></li>
-                    <li>WiFi & matériel <span class="price">Inclus</span></li>
-                    <li>Flexibilité horaire <span class="price">Oui</span></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Salles de Réunion</h3>
-                <p>Tarifs dégressifs</p>
-                <ul>
-                    <li>1ère heure <span class="price">60 CHF</span></li>
-                    <li>2ème heure <span class="price">30 CHF (-50%)</span></li>
-                    <li>3ème heure+ <span class="price">50 CHF/h</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="contact">
-        <h2>Contact</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Nous trouver</h3>
-                <p>📍 Rue de la Beauté 12, 1205 Genève</p>
-                <p>📞 +41 22 123 45 67</p>
-                <p>✉️ contact@merykey.ch</p>
-                <p>🕐 Lun-Sam : 9h-19h</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 Mery Key - Institut de Beauté & Espace Pro</p>
-        <p><a href="#">Mentions légales</a> | <a href="#">CGV</a></p>
-    </footer>
+<section class="landing" id="landing-view">
+<button class="btn landing-switch" onclick="showDashboard()">Espace professionnel</button>
+<section class="hero"><h1>Mery Key</h1><p>Votre institut de beauté au cœur de Genève</p><a href="#services" class="btn">Nos services</a><a href="#contact" class="btn">Contact</a></section>
+<section class="services" id="services"><h2>Nos prestations</h2><div class="grid"><div class="card"><h3>Onglerie</h3><p>Manucure, gel, nail art</p><ul><li>Manucure classique <span class="price">35 CHF</span></li><li>Pose gel <span class="price">65 CHF</span></li><li>Pose gel + nail art <span class="price">85 CHF</span></li><li>Pédicure spa <span class="price">55 CHF</span></li></ul></div><div class="card"><h3>Massage</h3><p>Relaxant, pierres chaudes</p><ul><li>30 min <span class="price">55 CHF</span></li><li>60 min <span class="price">95 CHF</span></li><li>Pierres chaudes <span class="price">120 CHF</span></li></ul></div><div class="card"><h3>Épilation cire</h3><p>Cire chaude premium</p><ul><li>Maillot <span class="price">45 CHF</span></li><li>Jambes complètes <span class="price">55 CHF</span></li><li>Aisselles <span class="price">20 CHF</span></li></ul></div></div></section>
+<section class="services" id="contact"><h2>Contact</h2><div class="grid"><div class="card"><h3>Nous trouver</h3><p>Rue de la Beauté 12, 1205 Genève</p><p>+41 22 123 45 67</p><p>contact@merykey.ch</p><p>Lun-Sam : 9h-19h</p></div></div></section><footer class="footer"><p>© 2026 Mery Key - Institut de Beauté & Espace Pro</p><p><a href="#">Mentions légales</a> | <a href="#">CGV</a></p></footer>
+</section>
+<section class="dashboard" id="dashboard-view"><div class="dash-shell"><aside class="sidebar"><div class="brand"><span class="brand-mark">M</span><span>Mery Key <small style="display:block;color:#7f8a9b;font-size:.65rem;font-weight:500">OPERATIONS</small></span></div><div class="nav-label">Workspace</div><button class="nav-item active" onclick="selectNav(this,'overview')">▦ <span>Vue d'ensemble</span></button><button class="nav-item" onclick="selectNav(this,'documents')">▤ <span>Documents de travail</span></button><button class="nav-item" onclick="selectNav(this,'fines')">! <span>Multas</span></button><button class="nav-item" onclick="selectNav(this,'invoices')">▧ <span>Facturas</span></button><button class="nav-item" onclick="selectNav(this,'tracking')">◌ <span>Seguimiento</span></button><div class="side-bottom"><button class="nav-item" onclick="showLanding()">← <span>Volver a Mery Key</span></button></div></aside><main class="main"><header class="topbar"><div><div class="eyebrow">Panel de control</div><h1 id="page-title">Vue d'ensemble</h1></div><div class="top-actions"><button class="mobile-menu">☰</button><input class="search" placeholder="Buscar trabajo..." aria-label="Buscar trabajo"><div class="avatar">MC</div></div></header><div class="notice" id="notice" role="status"></div><div id="overview"><div class="metrics"><div class="metric"><span class="metric-label">Trabajos activos</span><strong>24</strong><small>+12% este mes</small></div><div class="metric"><span class="metric-label">Por facturar</span><strong>8</strong><small style="color:var(--yellow)">3 requieren atención</small></div><div class="metric"><span class="metric-label">Ingresos del mes</span><strong>18.420 CHF</strong><small>+8,4% vs. anterior</small></div><div class="metric"><span class="metric-label">Tasa de cobro</span><strong>94,2%</strong><small>Excelente rendimiento</small></div></div><div class="content-grid"><div class="panel"><div class="panel-head"><div><h2>Documentos de trabajo</h2><span class="subtle">Últimos reportes generados</span></div><div class="export"><button class="export-btn" onclick="toggleExport(this)">Exportar ▾</button><div class="export-menu"><button onclick="exportReport('Documentos de trabajo','PDF',this)">Descargar PDF</button><button onclick="exportReport('Documentos de trabajo','Excel/CSV',this)">Descargar Excel/CSV</button></div></div></div><div class="table-wrap"><table class="data-table"><thead><tr><th>Trabajo</th><th>Cliente</th><th>Estado</th><th>Actualizado</th></tr></thead><tbody><tr><td><strong>#MK-2048</strong><br><span class="subtle">Diseño de identidad</span></td><td>Atelier Lumière</td><td><span class="badge badge-blue">En proceso</span></td><td>Hoy, 10:42</td></tr><tr><td><strong>#MK-2047</strong><br><span class="subtle">Campaña primavera</span></td><td>Maison Étoile</td><td><span class="badge badge-yellow">Facturado</span></td><td>Ayer, 16:20</td></tr><tr><td><strong>#MK-2046</strong><br><span class="subtle">Consultoría visual</span></td><td>Studio Nord</td><td><span class="badge badge-green">Pagado</span></td><td>12 Jun, 09:15</td></tr></tbody></table></div></div><div class="panel"><div class="panel-head"><div><h2>Seguimiento de trabajos</h2><span class="subtle">Acceso rápido</span></div><button class="export-btn" onclick="selectNav(document.querySelectorAll('.nav-item')[5],'tracking')">Ver todo</button></div><div class="jobs"><button class="job selected" onclick="selectJob(this,'mk2048')"><div class="job-row"><strong>#MK-2048 · Atelier Lumière</strong><span class="badge badge-blue">En proceso</span></div><small>Diseño de identidad · Actualizado hoy</small></button><button class="job" onclick="selectJob(this,'mk2047')"><div class="job-row"><strong>#MK-2047 · Maison Étoile</strong><span class="badge badge-yellow">Facturado</span></div><small>Campaña primavera · Actualizado ayer</small></button><button class="job" onclick="selectJob(this,'mk2046')"><div class="job-row"><strong>#MK-2046 · Studio Nord</strong><span class="badge badge-green">Pagado</span></div><small>Consultoría visual · 12 Jun</small></button></div></div></div></div><div id="documents" class="panel section-panel" style="display:none"><div class="panel-head"><div><h2>Documentos de trabajo</h2><span class="subtle">Exporta el registro completo de documentos.</span></div><div class="export"><button class="export-btn" onclick="toggleExport(this)">Exportar ▾</button><div class="export-menu"><button onclick="exportReport('Documentos de trabajo','PDF',this)">Descargar PDF</button><button onclick="exportReport('Documentos de trabajo','Excel/CSV',this)">Descargar Excel/CSV</button></div></div></div><p class="flow-note">12 documentos listos para descargar · Última sincronización: hoy, 10:42</p></div><div id="fines" class="panel section-panel" style="display:none"><div class="panel-head"><div><h2>Multas</h2><span class="subtle">Control y reporte de incidencias.</span></div><div class="export"><button class="export-btn" onclick="toggleExport(this)">Exportar ▾</button><div class="export-menu"><button onclick="exportReport('Multas','PDF',this)">Descargar PDF</button><button onclick="exportReport('Multas','Excel/CSV',this)">Descargar Excel/CSV</button></div></div></div><p class="flow-note">4 incidencias registradas · 1 pendiente de revisión</p></div><div id="invoices" class="panel section-panel" style="display:none"><div class="panel-head"><div><h2>Facturas</h2><span class="subtle">Resumen financiero y documentos de cobro.</span></div><div class="export"><button class="export-btn" onclick="toggleExport(this)">Exportar ▾</button><div class="export-menu"><button onclick="exportReport('Facturas','PDF',this)">Descargar PDF</button><button onclick="exportReport('Facturas','Excel/CSV',this)">Descargar Excel/CSV</button></div></div></div><p class="flow-note">18 facturas emitidas · 16 pagadas · Total: 18.420 CHF</p></div><div id="tracking" class="panel section-panel" style="display:none"><div class="panel-head"><div><h2>Seguimiento de cada trabajo</h2><span class="subtle">Selecciona un trabajo para consultar su historial.</span></div></div><div class="content-grid"><div class="jobs"><button class="job selected" onclick="selectJob(this,'mk2048')"><div class="job-row"><strong>#MK-2048 · Atelier Lumière</strong><span class="badge badge-blue">En proceso</span></div><small>Diseño de identidad</small></button><button class="job" onclick="selectJob(this,'mk2047')"><div class="job-row"><strong>#MK-2047 · Maison Étoile</strong><span class="badge badge-yellow">Facturado</span></div><small>Campaña primavera</small></button><button class="job" onclick="selectJob(this,'mk2046')"><div class="job-row"><strong>#MK-2046 · Studio Nord</strong><span class="badge badge-green">Pagado</span></div><small>Consultoría visual</small></button></div><div><div class="eyebrow" id="timeline-job">#MK-2048 · Atelier Lumière</div><div class="timeline" id="timeline"></div></div></div></div></main></div></section>
+<script>
+const jobs={mk2048:{name:'#MK-2048 · Atelier Lumière',events:[['Creado','Solicitud recibida y validada','10 Jun 2026 · 09:12','done'],['En proceso','Equipo creativo asignado','11 Jun 2026 · 14:30','current'],['Facturado','Pendiente de facturación','',''],['Pagado','Pendiente de pago','',''],['Finalizado','Pendiente de cierre','','']]},mk2047:{name:'#MK-2047 · Maison Étoile',events:[['Creado','Brief aprobado por el cliente','02 Jun 2026 · 11:05','done'],['En proceso','Diseño entregado para revisión','04 Jun 2026 · 15:40','done'],['Facturado','Factura enviada al cliente','06 Jun 2026 · 09:20','current'],['Pagado','Pendiente de pago','',''],['Finalizado','Pendiente de cierre','','']]},mk2046:{name:'#MK-2046 · Studio Nord',events:[['Creado','Solicitud recibida y validada','08 Jun 2026 · 08:30','done'],['En proceso','Consultoría completada','09 Jun 2026 · 13:10','done'],['Facturado','Factura enviada al cliente','10 Jun 2026 · 10:00','done'],['Pagado','Pago confirmado','12 Jun 2026 · 09:15','current'],['Finalizado','Pendiente de cierre','','']]}};
+function showDashboard(){document.getElementById('landing-view').style.display='none';document.getElementById('dashboard-view').style.display='block';selectJob(document.querySelector('.job'),'mk2048')}function showLanding(){document.getElementById('dashboard-view').style.display='none';document.getElementById('landing-view').style.display='block';window.scrollTo(0,0)}function toggleExport(btn){document.querySelectorAll('.export.open').forEach(x=>x.classList.remove('open'));btn.closest('.export').classList.toggle('open')}function exportReport(name,format,el){el.closest('.export').classList.remove('open');const n=document.getElementById('notice');n.textContent='Preparando '+format+' de '+name+'… La descarga simulada estará lista en un momento.';n.classList.add('show');setTimeout(()=>{n.textContent='Reporte de '+name+' exportado correctamente como '+format+'.';},800);setTimeout(()=>n.classList.remove('show'),3600)}function selectNav(button,section){document.querySelectorAll('.nav-item').forEach(x=>x.classList.remove('active'));button.classList.add('active');const names={overview:"Vue d'ensemble",documents:'Documentos de trabajo',fines:'Multas',invoices:'Facturas',tracking:'Seguimiento de trabajos'};document.getElementById('page-title').textContent=names[section];['overview','documents','fines','invoices','tracking'].forEach(x=>document.getElementById(x).style.display=x===section?(x==='overview'?'block':'block'):'none');if(section==='tracking')renderTimeline('mk2048')}function selectJob(button,id){document.querySelectorAll('.job').forEach(x=>x.classList.remove('selected'));button.classList.add('selected');renderTimeline(id)}function renderTimeline(id){const job=jobs[id];const timeline=document.getElementById('timeline');if(!timeline)return;document.getElementById('timeline-job').textContent=job.name;timeline.innerHTML=job.events.map(e=>'<div class="event '+e[3]+'"><span class="dot"></span><h3>'+e[0]+'</h3><p>'+e[1]+'</p><time>'+e[2]+'</time></div>').join('')}document.addEventListener('click',e=>{if(!e.target.closest('.export'))document.querySelectorAll('.export.open').forEach(x=>x.classList.remove('open'))});renderTimeline('mk2048');
+</script>
 </body>
-</html>
+</html>.
